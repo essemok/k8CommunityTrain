@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/takama/router"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
@@ -9,7 +10,10 @@ import (
 )
 
 func TestHandler(t *testing.T) {
-	ts := httptest.NewServer(http.HandlerFunc(home))
+	r := router.New()
+	r.GET("/", home)
+
+	ts := httptest.NewServer(r)
 	defer ts.Close()
 
 	res, err := http.Get(ts.URL + "/")
