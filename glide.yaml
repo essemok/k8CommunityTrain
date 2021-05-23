@@ -1,0 +1,6 @@
+package: k8Community
+import:
+- package: github.com/Sirupsen/logrus
+  version: ^1.8.1
+- package: github.com/takama/router
+  version: ^0.6.5

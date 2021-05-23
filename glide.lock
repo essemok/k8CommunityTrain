@@ -1,0 +1,14 @@
+hash: b6c8a2ab036b5ff847fc1964db8b689e1b91ef47bd8dff790486724be7e09580
+updated: 2021-05-23T14:32:20.876442+03:00
+imports:
+- name: github.com/Sirupsen/logrus
+  version: bdc0db8ead3853c56b7cd1ac2ba4e11b47d7da6b
+- name: github.com/takama/router
+  version: 0db9d28f71e2a29c7b82ea6a0851bb0dedeaf744
+- name: golang.org/x/sys
+  version: 0cec03c779c1270924b29437a17b8a99ae590592
+  subpackages:
+  - internal/unsafeheader
+  - unix
+  - windows
+testImports: []
