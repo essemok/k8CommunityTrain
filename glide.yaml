@@ -7,3 +7,4 @@ import:
 - package: github.com/essemok/k8CommunityTrain
   subpackages:
   - handlers
+  - shutdown

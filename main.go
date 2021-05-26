@@ -5,6 +5,7 @@ import (
 	common_handlers "github.com/essemok/k8CommunityTrain/handlers"
 	"github.com/essemok/k8CommunityTrain/version"
 	"github.com/takama/router"
+	"k8Community/shutdown"
 	"net/http"
 	"os"
 )
@@ -32,4 +33,14 @@ func main() {
 	})
 
 	r.Listen("0.0.0.0:" + port)
+
+	logger := log.WithField("event", "shutdown")
+	sdHandler := shutdown.NewHandler(logger)
+	sdHandler.RegisterShutdown(sd)
+}
+
+// sd does graceful dhutdown of the service
+func sd() (string, error) {
+	// if service has to finish some tasks before shutting down, these tasks must be finished first
+	return "Ok", nil
 }

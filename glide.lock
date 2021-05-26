@@ -1,10 +1,11 @@
-hash: b07d5dede8001832ae2269bafbc83a539a330ce544ea9c2bb29950d329e0ae98
-updated: 2021-05-26T15:36:01.5359+03:00
+hash: fbb33b2a9055fc2a34f9d922ec8e9dcca1e2763c10f009a036c1573cd4e07186
+updated: 2021-05-26T16:38:42.279357+03:00
 imports:
 - name: github.com/essemok/k8CommunityTrain
-  version: a6744dbd0ea41ca2c4d198321efe7a6d477d6459
+  version: 5dc1144984044db1aec49839e1af56304bb12a3d
   subpackages:
   - handlers
+  - shutdown
   - version
 - name: github.com/Sirupsen/logrus
   version: bdc0db8ead3853c56b7cd1ac2ba4e11b47d7da6b
