@@ -4,3 +4,6 @@ import:
   version: ^1.8.1
 - package: github.com/takama/router
   version: ^0.6.5
+- package: github.com/essemok/k8CommunityTrain
+  subpackages:
+  - handlers
