@@ -39,7 +39,7 @@ func TestHandler(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	expectedGreeting := "Processing URL /..."
+	expectedGreeting := "Processing URL /... Repo UNKNOWN, Commit UNKNOWN, Version UNKNOWN"
 	testingGreeting := strings.Trim(string(greeting), "\n")
 
 	if testingGreeting != expectedGreeting {

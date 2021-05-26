@@ -9,8 +9,8 @@ import (
 func home(c *router.Control) {
 	fmt.Fprintf(
 		c.Writer,
-		"Repo %s, Commit %s, Version %s, URL %s...",
-		version.REPO, version.COMMIT, version.RELEASE, c.Request.URL.Path)
+		"Processing URL %s... Repo %s, Commit %s, Version %s",
+		c.Request.URL.Path, version.REPO, version.COMMIT, version.RELEASE)
 }
 
 func logger(c *router.Control) {
